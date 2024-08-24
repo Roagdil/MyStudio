@@ -1,0 +1,6 @@
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_2\Teoria_2\Ejercicio_3\obj\Debug\Ejercicio_3.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_2\Teoria_2\Ejercicio_3\bin\Debug\Ejercicio_3.exe.config
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_2\Teoria_2\Ejercicio_3\bin\Debug\Ejercicio_3.exe
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_2\Teoria_2\Ejercicio_3\bin\Debug\Ejercicio_3.pdb
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_2\Teoria_2\Ejercicio_3\obj\Debug\Ejercicio_3.exe
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_2\Teoria_2\Ejercicio_3\obj\Debug\Ejercicio_3.pdb

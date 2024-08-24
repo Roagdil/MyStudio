@@ -1,0 +1,12 @@
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\ejercicio_1\Teoria_1\bin\Debug\Ejercicio_1.exe.config
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\ejercicio_1\Teoria_1\bin\Debug\Ejercicio_1.exe
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\ejercicio_1\Teoria_1\bin\Debug\Ejercicio_1.pdb
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\ejercicio_1\Teoria_1\obj\Debug\Ejercicio_1.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\ejercicio_1\Teoria_1\obj\Debug\Ejercicio_1.exe
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\ejercicio_1\Teoria_1\obj\Debug\Ejercicio_1.pdb
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Teoria_1\obj\Debug\Ejercicio_1.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Teoria_1\obj\Debug\Ejercicio_1.exe
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Teoria_1\bin\Debug\Ejercicio_1.exe.config
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Teoria_1\bin\Debug\Ejercicio_1.exe
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Teoria_1\bin\Debug\Ejercicio_1.pdb
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Teoria_1\obj\Debug\Ejercicio_1.pdb

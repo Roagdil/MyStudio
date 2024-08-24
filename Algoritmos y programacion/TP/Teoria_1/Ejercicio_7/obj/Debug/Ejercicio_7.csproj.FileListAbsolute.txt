@@ -1,0 +1,6 @@
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Ejercicio_7\bin\Debug\Ejercicio_7.exe.config
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Ejercicio_7\bin\Debug\Ejercicio_7.exe
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Ejercicio_7\bin\Debug\Ejercicio_7.pdb
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Ejercicio_7\obj\Debug\Ejercicio_7.exe
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Ejercicio_7\obj\Debug\Ejercicio_7.pdb
+C:\Users\Rodrigo\Documents\UNAJ\Algoritmos y programacion\TP\Teoria_1\Ejercicio_7\obj\Debug\Ejercicio_7.csprojResolveAssemblyReference.cache
