@@ -15,11 +15,12 @@ namespace Ejercicio_2
 	{
 		public static void Main(string[] args)
 		{
-			string nombre, apellido, respuesta;
-			long dni;
-			ArrayList listaEscuela= new ArrayList();
+			string respuesta;
 			ArrayList alumno = new	ArrayList();
-			ArrayList listaAlumno = new ArrayList();
+			ArrayList listaEscuela= new ArrayList();
+			
+			
+			
 			
 			
 			do{
@@ -28,22 +29,23 @@ namespace Ejercicio_2
 				switch (respuesta) {
 					case "a": // inscribir un alumno
 						nuevoAlumno(ref alumno);
-						listaAlumno.Add(alumno);
-						
+						agregarEscuela(ref listaEscuela, alumno);
 						break;
-					case "b":
-						eliminarAlumno(ref listaAlumno);
+					case "b": // borrar alumno
+						eliminarAlumno(ref listaEscuela);
 						break;
 					case "c":
-						Console.WriteLine("Se encuentran {0} alumnos inscriptos",length(listaAlumno));
+						
 						break;
-					case "d": break;
+					case "d":
+						
+						break;
 					case "e": break;
 					case "" : break;
 					default:
 						Console.Clear();
 						Console.WriteLine("Respuesta incorrecta");
-						break;
+						break; 
 				}
 				
 				
@@ -84,16 +86,23 @@ namespace Ejercicio_2
 			alumno.Add(escuela);
 			
 		}
-		public static void eliminarAlumno(ref ArrayList lista){
-			ArrayList copia= new ArrayList();
+		public static void eliminarAlumno(ref ArrayList listaEscuela){
+			ArrayList alumnos= new ArrayList();
 			Console.WriteLine("Ingrese el dni del alumno");
 			long dni = long.Parse(Console.ReadLine());
-			foreach (ArrayList element in lista) {
-				if ((long)element[2] != dni){
-					copia.Add(element);
+			foreach (ArrayList escuela in listaEscuela) { // escuela tiene nombre{0} y listadeAlumnos{1}
+				foreach (ArrayList Alumno in (ArrayList)escuela[1]) {
+					if ((long)Alumno[2]== dni){		
+						escuela.Remove(Alumno);
+						Console.WriteLine("Alumno eliminado");
+						break;
+					}
+										
+					
 				}
+				
 			}
-			lista = copia;
+			
 		}
 		public static int length(ArrayList lista){
 			int i=0;
@@ -101,6 +110,24 @@ namespace Ejercicio_2
 				i++;
 			}
 			return i;
+		}
+		public static void agregarEscuela(ref ArrayList escuelas, ArrayList alumno){
+			// formato de Escuela = nombre , lista de alumnos
+			bool condicion= true;
+			foreach (ArrayList escuela in escuelas) {
+				if ((string)escuela[0]==(string)alumno[3]){
+					condicion = false;
+					ArrayList alumnos = (ArrayList)escuela[1];
+					alumnos.Add(alumno);
+					escuela[1]= alumnos;
+				}
+			}
+			if (condicion){
+				ArrayList listaAlumno = new ArrayList(){alumno};
+				string nombre = (string )alumno[3];
+				ArrayList escuela= new ArrayList(){nombre,listaAlumno};
+				escuelas.Add(escuela);
+			}
 		}
 		
 	}
