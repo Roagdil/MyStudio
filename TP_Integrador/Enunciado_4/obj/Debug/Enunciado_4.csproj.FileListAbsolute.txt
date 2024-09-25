@@ -1,0 +1,6 @@
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\TP_Integrador\Enunciado_4\obj\Debug\Enunciado_4.csprojResolveAssemblyReference.cache
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\TP_Integrador\Enunciado_4\bin\Debug\Enunciado_4.exe.config
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\TP_Integrador\Enunciado_4\bin\Debug\Enunciado_4.exe
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\TP_Integrador\Enunciado_4\bin\Debug\Enunciado_4.pdb
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\TP_Integrador\Enunciado_4\obj\Debug\Enunciado_4.exe
+C:\Users\Rodrigo\Documents\SharpDevelop Projects\TP_Integrador\Enunciado_4\obj\Debug\Enunciado_4.pdb
