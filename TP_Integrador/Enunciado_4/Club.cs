@@ -82,5 +82,21 @@ namespace Enunciado_4
 			}
 			
 		}
+		public void DarDeBajaEntrenador(){
+			
+		}
+		public void DarDeAltaEntrenador(){
+			
+		}
+		public void DarDeAltaAtleta(Atleta atleta){
+			
+		}
+		public void DarDeBajaAtleta(Atleta atleta){
+			
+		}
+		public void PagarCuota(Atleta atleta){
+			
+		}
+		
 	}
 }
