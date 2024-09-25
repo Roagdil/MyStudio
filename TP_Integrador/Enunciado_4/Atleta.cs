@@ -15,7 +15,7 @@ namespace Enunciado_4
 	/// </summary>
 	public class Atleta
 	{
-		string nombre;
+		string nombre="";
 		int edad;
 		Deporte deporte;
 		int categoria;
