@@ -22,7 +22,7 @@ namespace Enunciado_4
 		int cantidadInscriptos; // atletas.count 
 		int costo;
 		
-		public Deporte() : base ()
+		public Deporte(string categoria) : base (categoria)
 		{
 		}
 		public void DarAltaEntrenador(string entrenador){

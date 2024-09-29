@@ -17,12 +17,14 @@ namespace Enunciado_4
 	{
 		string nombre="";
 		int edad;
+		
 		Deporte deporte;
 		bool socio;
 		DateTime ultimoPago;
 		
-		public Atleta(): base()
+		public Atleta(string categoria): base( categoria)
 		{
+			
 		}
 		
 		public void ActualizarPago(){

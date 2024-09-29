@@ -16,6 +16,7 @@ namespace Enunciado_4
 	public class Categoria
 	{
 		string cat;
+		
 		public Categoria(string cat)
 		{
 			this.cat = cat;
