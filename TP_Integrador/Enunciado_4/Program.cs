@@ -20,6 +20,7 @@ namespace Enunciado_4
 			Console.WriteLine( Intput());
 			club.PagarCuota(atleta);
 			
+			
 			// TODO: Implement Functionality Here
 			
 			Console.Write("Press any key to continue . . . ");

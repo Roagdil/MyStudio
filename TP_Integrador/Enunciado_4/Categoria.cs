@@ -15,8 +15,18 @@ namespace Enunciado_4
 	/// </summary>
 	public class Categoria
 	{
-		public Categoria()
+		string cat;
+		public Categoria(string cat)
 		{
+			this.cat = cat;
+		}
+		public string categoria{
+			set{
+				this.cat = value;
+			}
+			get{
+				return this.cat;
+			}
 		}
 	}
 }
