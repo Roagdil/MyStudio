@@ -18,11 +18,11 @@ namespace Enunciado_4
 		string nombre="";
 		int edad;
 		
-		Deporte deporte;
+		Deporte dep;
 		bool socio;
 		DateTime ultimoPago;
 		
-		public Atleta(string categoria): base( categoria)
+		public Atleta(string nombre, int edad,string categoria): base( categoria)
 		{
 			
 		}
@@ -36,6 +36,24 @@ namespace Enunciado_4
 			}
 			get {
 				return ultimoPago;
+			}
+		}
+		
+		public Deporte deporte{
+			set{
+				dep = value;
+			}
+			get{
+				return dep;
+			}
+		}
+		
+		public bool Socio{
+			set{
+				socio = value;
+			}
+			get {
+				return socio;
 			}
 		}
 	}

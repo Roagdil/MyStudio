@@ -16,10 +16,10 @@ namespace Enunciado_4
 	public class Deporte : Categoria
 	{
 		string nombreEntrenador;
-		string dias;
-		DateTime [] horarios ;
+		string [] dias;
+		int [] horarios ;
 		int cupos;
-		int cantidadInscriptos; // atletas.count 
+		int cantidadInscriptos=0; // atletas.count 
 		int costo;
 		
 		public Deporte(string categoria) : base (categoria)
@@ -33,9 +33,11 @@ namespace Enunciado_4
 		}
 		public void AgregarAtleta(){
 			cupos--;
+			cantidadInscriptos ++;
 		}
 		public void QuitarAtleta(){
 			cupos++;
+			cantidadInscriptos --;
 		}
 	}
 }

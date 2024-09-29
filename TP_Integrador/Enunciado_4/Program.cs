@@ -14,6 +14,7 @@ namespace Enunciado_4
 	{
 		public static void Main(string[] args)
 		{
+			// Listado de deportes y atletas (Niños/as) ya creado para la simulacion del programa
 			int i = 0;
 			Club club = new Club();
 			Atleta atleta = new Atleta("1");

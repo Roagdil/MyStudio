@@ -30,7 +30,7 @@ namespace Enunciado_4
 			}
 		}
 		
-		public void AgregarAtleta(Atleta atleta, Deporte deporte){
+		public void AgregarAtleta(Atleta atleta){
 			
 			
 		}
@@ -43,12 +43,7 @@ namespace Enunciado_4
 		public void DarDeAltaEntrenador(Deporte deporte){
 			
 		}
-		public void DarDeAltaAtleta(Atleta atleta){
-			
-		}
-		public void DarDeBajaAtleta(Atleta atleta){
-			
-		}
+	
 		public void PagarCuota(Atleta atleta){
 			// pagar cuota de un atleta, se debe buscar el deporte que esta anotado y 
 			foreach (Atleta  atleta1 in atletas) {
