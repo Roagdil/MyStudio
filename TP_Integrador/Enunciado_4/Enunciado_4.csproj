@@ -49,7 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Atleta.cs" />
+    <Compile Include="Categoria.cs" />
     <Compile Include="Club.cs" />
+    <Compile Include="Cupos.cs" />
     <Compile Include="Deporte.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

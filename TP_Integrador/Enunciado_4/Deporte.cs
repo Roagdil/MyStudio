@@ -13,7 +13,7 @@ namespace Enunciado_4
 	/// <summary>
 	/// Description of Deporte.
 	/// </summary>
-	public class Deporte
+	public class Deporte : Categoria
 	{
 		string nombreEntrenador;
 		string dias;
@@ -22,7 +22,7 @@ namespace Enunciado_4
 		int cantidadInscriptos; // atletas.count 
 		int costo;
 		
-		public Deporte()
+		public Deporte() : base ()
 		{
 		}
 		public void DarAltaEntrenador(string entrenador){

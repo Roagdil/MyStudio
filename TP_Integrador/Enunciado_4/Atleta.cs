@@ -13,16 +13,15 @@ namespace Enunciado_4
 	/// <summary>
 	/// Description of Atleta.
 	/// </summary>
-	public class Atleta
+	public class Atleta : Categoria 
 	{
 		string nombre="";
 		int edad;
 		Deporte deporte;
-		int categoria;
 		bool socio;
 		DateTime ultimoPago;
 		
-		public Atleta()
+		public Atleta(): base()
 		{
 		}
 		

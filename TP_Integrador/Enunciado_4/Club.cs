@@ -7,6 +7,7 @@
  * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
  */
 using System;
+using System.Collections;
 
 namespace Enunciado_4
 {
@@ -15,77 +16,31 @@ namespace Enunciado_4
 	/// </summary>
 	public class Club
 	{
-		Atleta [] atletas;
-		Deporte [] deportes;
+		ArrayList atletas;
+		ArrayList deportes;
 		public Club()
 		{
 		}
 		
 		public void ImprimirDeudores(){
 			foreach (Atleta atleta in atletas) {
-				if(atleta.UltimoPago == DateTime.Now){
+				if(atleta.UltimoPago.Month != DateTime.Now.Month){
 					Console.WriteLine(atleta);
 				}
 			}
 		}
-		public void AgregarDeporte(Deporte deporte){
-			int cap = this.deportes.Length;
-			Deporte [] deportes= new Deporte[cap+1];
-			for (int i = 0; i < cap; i++) {
-				deportes[i]= this.deportes[i];
-			}
-			deportes[-1] = deporte;
-			this.deportes = deportes;
+		
+		public void AgregarAtleta(Atleta atleta, Deporte deporte){
 			
-		}
-		public void AgregarAtleta(Atleta atleta){
-			int cap = this.atletas.Length;
-			Atleta [] atletas= new Atleta[cap+1];
-			for (int i = 0; i < cap; i++) {
-				atletas[i]= this.atletas[i];
-			}
-			atletas[-1] = atleta;
-			this.atletas = atletas;
+			
 		}
 		public void EliminarAtleta(Atleta atleta){
-			int cap = this.atletas.Length;
-			int cont= 0;
-			Atleta [] atletas= new Atleta[cap-1];
-			try {
-				for (int i = 0; i < cap; i++) {
-					if(atleta != this.atletas[i]){
-						atletas[i]= this.atletas[i];
-					}
-				}
-				this.atletas = atletas;
-			} catch (IndexOutOfRangeException) {
-				
-				Console.WriteLine("Cliente ingresado no existente");
-			}
 			
 		}
-		public void EliminarDeporte(Deporte deporte){
-			int cap = this.deportes.Length;
-			int cont= 0;
-			Deporte [] deportes= new Deporte[cap-1];
-			try {
-				for (int i = 0; i < cap; i++) {
-					if(deporte != this.deportes[i]){
-						deportes[i]= this.deportes[i];
-					}
-					
-				}
-				this.deportes = deportes;
-			} catch (IndexOutOfRangeException) {
-				
-				Console.WriteLine("Deporte ingresado no existente");
-			}
+		public void DarDeBajaEntrenador(Deporte deporte){
 			
 		}
-		public void DarDeBajaEntrenador(){
-			
-		}
-		public void DarDeAltaEntrenador(){
+		public void DarDeAltaEntrenador(Deporte deporte){
 			
 		}
 		public void DarDeAltaAtleta(Atleta atleta){
@@ -95,8 +50,12 @@ namespace Enunciado_4
 			
 		}
 		public void PagarCuota(Atleta atleta){
-			
+			// pagar cuota de un atleta, se debe buscar el deporte que esta anotado y 
+			foreach (Atleta  atleta1 in atletas) {
+				Console.WriteLine(atleta1);
+			}
 		}
-		
 	}
 }
+//		
+	
