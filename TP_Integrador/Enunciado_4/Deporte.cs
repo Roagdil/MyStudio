@@ -15,14 +15,15 @@ namespace Enunciado_4
 	/// </summary>
 	public class Deporte : Categoria
 	{
+		string nombre;
 		string nombreEntrenador;
 		string [] dias;
 		int [] horarios ;
 		int cupos;
-		int cantidadInscriptos=0; // atletas.count 
+		int cantidadInscriptos=0; 
 		int costo;
 		
-		public Deporte(string categoria) : base (categoria)
+		public Deporte(string nombre , string categoria) : base (categoria)
 		{
 		}
 		public void DarAltaEntrenador(string entrenador){
@@ -38,6 +39,11 @@ namespace Enunciado_4
 		public void QuitarAtleta(){
 			cupos++;
 			cantidadInscriptos --;
+		}
+		public string Nombre{
+			get{
+				return this.nombre;
+			}
 		}
 	}
 }

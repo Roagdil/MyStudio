@@ -16,8 +16,7 @@ namespace Enunciado_4
 	public class Atleta : Categoria 
 	{
 		string nombre="";
-		int edad;
-		
+		int edad;	
 		Deporte dep;
 		bool socio;
 		DateTime ultimoPago;

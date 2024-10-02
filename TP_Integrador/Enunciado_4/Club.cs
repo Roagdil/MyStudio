@@ -50,6 +50,13 @@ namespace Enunciado_4
 				Console.WriteLine(atleta1);
 			}
 		}
+		public void Deportes(){
+			Deporte deporte ;
+			for (int i = 0; i < deportes.Count; i++) {
+				deporte = (Deporte)deportes[i];
+				Console.WriteLine("{0}_ {1}",i+1,deporte.Nombre);
+			}
+		}
 	}
 }
 //		
