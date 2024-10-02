@@ -18,12 +18,14 @@ namespace Enunciado_4
 			int i = 0;
 			string texto;
 			Club club = new Club();
+			Atleta atleta;
 			
 			
 			do{
 				Menu();
 				i = Intput();
 				switch (i) {
+//----------------------------------------------------------------------------------------
 					case 1: // agregar entrenador
 						Console.WriteLine("opcion 1");
 						Console.WriteLine("Ingrese el deporte que desea usar");
@@ -34,6 +36,8 @@ namespace Enunciado_4
 							club.AgregarEntrenador(i);
 						}
 						break;
+//----------------------------------------------------------------------------------------
+
 					case 2: // quitar entrenador
 						Console.WriteLine("opcion 2");
 						Console.WriteLine("Ingrese el deporte que desea usar");
@@ -44,15 +48,20 @@ namespace Enunciado_4
 							club.DarDeBajaEntrenador(i);
 						}
 						break;
+//--------------------------------------------------------------------------------------					
 					case 3: // agregar atleta
 						Console.WriteLine("opcion 3");
+						
 						break;
+//--------------------------------------------------------------------------------------
 					case 4: // quitar atleta
 						Console.WriteLine("opcion 4");
 						break;
+//--------------------------------------------------------------------------------------
 					case 5: // pagar cuota
 						Console.WriteLine("opcion 5");
 						break;
+//--------------------------------------------------------------------------------------
 					case 6:
 						
 						do{
@@ -61,19 +70,24 @@ namespace Enunciado_4
 							SubMenu();
 							i = Intput();
 							switch (i) {
+//----------------------------------------------------------------------------------------
 								case 1:
 									Console.WriteLine("opcion 1");
 									break;
+						//----------------------------------------------------------------
 								case 2:
 									Console.WriteLine("opcion 2");
 									break;
+						//----------------------------------------------------------------
 								case 3:
 									Console.WriteLine("opcion 3");
 									break;
+						//----------------------------------------------------------------
 								case 4:
 									Console.WriteLine("Atras.");
 									break;
-								default: 
+						//----------------------------------------------------------------
+								default:
 									Console.WriteLine("Opcion incorrecta");
 									Console.ReadKey();
 									Console.Clear();
@@ -82,13 +96,16 @@ namespace Enunciado_4
 						}while(i!= 4);
 
 						break;
+//----------------------------------------------------------------------------------------
 					case 7:
 						Console.WriteLine("opcion 5");
 						break;
+//----------------------------------------------------------------------------------------
 					case 0:
 						Console.WriteLine("Adios");
 						i = 0;
 						break;
+//----------------------------------------------------------------------------------------
 					default:
 						Console.WriteLine("Valor ingresado no valido");
 						Console.ReadKey();
