@@ -16,6 +16,7 @@ namespace Enunciado_4
 		{
 			// Listado de deportes y atletas (Niños/as) ya creado para la simulacion del programa
 			int i = 0;
+			string texto;
 			Club club = new Club();
 			
 			
@@ -23,19 +24,33 @@ namespace Enunciado_4
 				Menu();
 				i = Intput();
 				switch (i) {
-					case 1:
+					case 1: // agregar entrenador
 						Console.WriteLine("opcion 1");
+						Console.WriteLine("Ingrese el deporte que desea usar");
+						club.Deportes();
+						Console.WriteLine("0_ Salir");
+						i = Intput();
+						if (i!=0) {
+							club.AgregarEntrenador(i);
+						}
 						break;
-					case 2:
+					case 2: // quitar entrenador
 						Console.WriteLine("opcion 2");
+						Console.WriteLine("Ingrese el deporte que desea usar");
+						club.Deportes();
+						Console.WriteLine("0_ Salir");
+						i = Intput();
+						if (i!=0) {
+							club.DarDeBajaEntrenador(i);
+						}
 						break;
-					case 3:
+					case 3: // agregar atleta
 						Console.WriteLine("opcion 3");
 						break;
-					case 4:
+					case 4: // quitar atleta
 						Console.WriteLine("opcion 4");
 						break;
-					case 5:
+					case 5: // pagar cuota
 						Console.WriteLine("opcion 5");
 						break;
 					case 6:

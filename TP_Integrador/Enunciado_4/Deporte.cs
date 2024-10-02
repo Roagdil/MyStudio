@@ -26,11 +26,13 @@ namespace Enunciado_4
 		public Deporte(string nombre , string categoria) : base (categoria)
 		{
 		}
-		public void DarAltaEntrenador(string entrenador){
-			nombreEntrenador = entrenador;
-		}
-		public void DarBajaEntrenador(){
-			
+		public string NombreEntrenador{
+			set{
+				this.nombreEntrenador = value;
+			}
+			get{
+				return this.nombreEntrenador;
+			}
 		}
 		public void AgregarAtleta(){
 			cupos--;
