@@ -20,7 +20,7 @@ namespace Enunciado_4
 		string [] dias;
 		int [] horarios ;
 		int cupos;
-		int cantidadInscriptos=0; 
+		int cantidadInscriptos=0;
 		int costo;
 		
 		public Deporte(string nombre , string categoria) : base (categoria)
@@ -35,8 +35,19 @@ namespace Enunciado_4
 			}
 		}
 		public void AgregarAtleta(){
-			cupos--;
-			cantidadInscriptos ++;
+			try {
+				if (cupos != 0) {
+					cupos--;
+					cantidadInscriptos ++;
+				}else{
+					throw new IndexOutOfRangeException();
+				}
+			} catch (IndexOutOfRangeException) {
+				Console.WriteLine("No hay cupos disponibles");
+				
+			}
+			
+			
 		}
 		public void QuitarAtleta(){
 			cupos++;

@@ -31,7 +31,18 @@ namespace Enunciado_4
 		}
 		
 		public void AgregarAtleta(Atleta atleta){
-			
+			this.Deportes(atleta.categoria);
+			Console.WriteLine("Ingrese un deporte");
+			string texto = Console.ReadLine();
+			for (int i = 0; i < deportes.Count; i++) {
+				Deporte deporte = (Deporte) deportes[i];
+				if (texto.ToUpper() == deporte.Nombre.ToUpper() && atleta.categoria == deporte.categoria){
+					atleta.deporte = deporte;
+					deporte.AgregarAtleta();
+					atletas.Add(atleta);
+					
+				}
+			}
 			
 		}
 		public void EliminarAtleta(Atleta atleta){
@@ -75,7 +86,18 @@ namespace Enunciado_4
 			Deporte deporte ;
 			for (int i = 0; i < deportes.Count; i++) {
 				deporte = (Deporte)deportes[i];
-				Console.WriteLine("{0}_ {1} categoria: {2}",i+1,deporte.Nombre, deporte.categoria);
+				Console.WriteLine("{0} categoria: {1}",deporte.Nombre, deporte.categoria);
+			}
+		}
+		public void Deportes(string cat){
+			Deporte deporte ;
+			for (int i = 0; i < deportes.Count; i++) {
+				
+				deporte = (Deporte)deportes[i];
+				if (deporte.categoria == cat) {
+					Console.WriteLine("{0} categoria: {1}",deporte.Nombre, deporte.categoria);
+				}
+				
 			}
 		}
 	}

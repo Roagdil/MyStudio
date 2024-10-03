@@ -21,9 +21,13 @@ namespace Enunciado_4
 		bool socio;
 		DateTime ultimoPago;
 		
-		public Atleta(string nombre, int edad,string categoria): base( categoria)
+		public Atleta(string nombre, int edad): base( edad)
 		{
-			
+			this.nombre = nombre;
+			this.edad = edad;
+			socio = edad > 18 ;
+			this.ActualizarPago();
+				
 		}
 		
 		public void ActualizarPago(){

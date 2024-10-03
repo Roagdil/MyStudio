@@ -51,6 +51,16 @@ namespace Enunciado_4
 //--------------------------------------------------------------------------------------					
 					case 3: // agregar atleta
 						Console.WriteLine("opcion 3");
+						//ingrese los datos del niño atleta
+						Console.WriteLine("Ingrese su nombre:");
+						texto = Console.ReadLine();
+						Console.WriteLine("Ingrese su Edad:");
+						i = Intput();
+						atleta = new Atleta(texto,i);
+						club.AgregarAtleta(atleta);
+						
+						// imprimir lista de deportes con su categoria --- club
+						// unir al deporte seleccionado --- club 
 						
 						break;
 //--------------------------------------------------------------------------------------
@@ -154,6 +164,9 @@ namespace Enunciado_4
 			}catch(FormatException){
 				Console.WriteLine("A ingresado un valor no numerico");
 				return Intput();
+			}catch(Exception){
+				Console.WriteLine("Error de sistema ");
+				return 0;
 			}
 		}
 	}

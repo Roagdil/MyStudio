@@ -17,9 +17,15 @@ namespace Enunciado_4
 	{
 		string cat;
 		
-		public Categoria(string cat)
+		public Categoria(int cat)
 		{
-			this.cat = cat;
+			if (cat >= 6 && cat <= 10){
+				this.cat = "Menor";
+			}else if (cat >= 11 && cat <= 17) {
+				this.cat = "Adolecente";
+			}else if (cat >= 18) {
+				this.cat = "Adulto";
+			}
 		}
 		public string categoria{
 			set{
